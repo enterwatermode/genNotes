@@ -9,7 +9,7 @@ mkdir "week${week}"
 array=( Monday Tuesday Wednesday Thursday Friday Saturday Sunday )
 for i in "${array[@]}"
 do
-    filename="${i}.txt"
+    filename="${i}.md"
     touch "week${week}/$filename"
-    echo $i > "week${week}/$filename"
+    echo "# $i" > "week${week}/$filename"
 done
